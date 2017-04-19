@@ -190,9 +190,6 @@ bot.on('callback_query', msg => {
         text: 'Reddit',
         callback_data: 'cmd_reddit'
       }, {
-        text: 'Repost',
-        callback_data: 'cmd_repost'
-      }, {
         text: 'Urban Dictionary',
         callback_data: 'cmd_urbandictionary'
       }], [{
@@ -251,10 +248,6 @@ bot.on('callback_query', msg => {
 
   if (msg.data === 'cmd_reddit') {
     bot.editMessageText(`${lang.reddit}`, cmdParams)
-  }
-
-  if (msg.data === 'cmd_repost') {
-    bot.editMessageText(`${lang.repost}`, cmdParams)
   }
 
   if (msg.data === 'cmd_urbandictionary') {
